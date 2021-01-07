@@ -1,0 +1,74 @@
+<html>
+    <head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="test.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+    <body>
+        <form class="from" method="POST" action="mail.php">
+            <div class="container-fluid">
+                <div class="row">   
+                    <div class="form-row col-md-6">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputNom">Nom</label>
+                                    <input type="text" class="form-control" name="nom" placeholder="Nom">
+                                </div>
+                                <div class="col">
+                                    <label for="inputPrenom">Prenom</label>
+                                    <input type="text" class="form-control" name="prenom" placeholder="Prenom">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+                                </div>
+                                <div class="col">
+                                    <label for="inputTel">Telephone</label>
+                                    <input class="form-control" type="tel" value="** ** ** ** **" id="example-tel-input" name="tel">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="form-group">
+                                    <label for="inputObjet">Sujet</label>
+                                    <input class="form-control" type="objet" value="Sujet" name="sujet" id="example-tel-input">
+                                </div>
+                            <div class="form-group">
+                                <label for="Textarea">Ecrivez votre message</label>
+                                <textarea class="md-textarea form-control" id="form7" name="message" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="container text-center">
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                        </div>
+                        <script>(function () {
+                        var setting = {"height":360,"width":758,"zoom":15,"queryString":"BTMI Conseils, Place Loïc Baron, Melun, France","place_id":"ChIJvZqjk5D75UcRBaYncA0NklU","satellite":true,"centerCoord":[48.54986371798091,2.6534351499999875],"cid":"0x55920d0d7027a605","lang":"fr","cityUrl":"/france/fontainebleau-12927","cityAnchorText":"Carte de Fontainebleau, Ile de France, France","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"337780"};
+                        var d = document;
+                        var s = d.createElement('script');
+                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=337780';
+                        s.async = true;
+                        s.onload = function (e) {
+                        window.OneMap.initMap(setting)
+                        };
+                        var to = d.getElementsByTagName('script')[0];
+                        to.parentNode.insertBefore(s, to);
+                    })();</script><a href="https://1map.com/fr/map-embed">1 Map</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+ </html>
